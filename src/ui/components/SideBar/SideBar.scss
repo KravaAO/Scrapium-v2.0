@@ -1,0 +1,43 @@
+@use '../../styles/utils/variables' as vars;
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: vars.$main-color;
+  padding-block: calc((15px / vars.$main-font-size) * 1rem);
+  color: #fff;
+  font-family: "Open Sans", serif;
+  font-weight: 500;
+  white-space: nowrap;
+
+  grid-area: sidebar;
+
+  &__logo {
+    width: calc((35px / vars.$main-font-size) * 1rem);
+    height: calc((50px / vars.$main-font-size) * 1rem);
+    margin-bottom: calc((70px / vars.$main-font-size) * 1rem);
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: calc((30px / vars.$main-font-size) * 1rem);
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc((10px / vars.$main-font-size) * 1rem);
+    padding-block: calc((5px / vars.$main-font-size) * 1rem);
+    padding-inline: calc((15px / vars.$main-font-size) * 1rem);
+  }
+}

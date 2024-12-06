@@ -1,0 +1,49 @@
+@use '../../styles/utils/variables' as vars;
+
+.settings {
+  &__title {
+    margin-bottom: calc((5px / vars.$main-font-size) * 1rem);
+  }
+  
+  &__item-content {
+    display: flex;
+    gap: calc((100px / vars.$main-font-size) * 1rem);
+    padding: calc((50px / vars.$main-font-size) * 1rem) calc((20px / vars.$main-font-size) * 1rem) calc((20px / vars.$main-font-size) * 1rem);
+  }
+
+  &__item {
+    padding: calc((30px / vars.$main-font-size) * 1rem);
+    border-bottom: 1px solid #C9C9C9;
+  }
+  
+  &__color-group {
+    display: flex;
+    align-items: center;
+    gap: calc((10px / vars.$main-font-size) * 1rem);
+    padding-left: calc((10px / vars.$main-font-size) * 1rem);
+  }
+  
+  &__item-input {
+    width: calc((50px / vars.$main-font-size) * 1rem);
+  }
+
+  &__color-section {
+    display: flex;
+    flex-direction: column;
+    gap: calc((10px / vars.$main-font-size) * 1rem);
+  }
+  
+  &__input--color {
+    width: calc((50px / vars.$main-font-size) * 1rem);
+    height: calc((25px / vars.$main-font-size) * 1rem);
+  }
+  
+  &__paragraph {
+    margin-bottom: calc((20px / vars.$main-font-size) * 1rem);
+  }
+  
+  &__input--number {
+    width: calc((50px / vars.$main-font-size) * 1rem);
+    border: 1px solid black;
+  }
+}

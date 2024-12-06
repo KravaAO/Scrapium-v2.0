@@ -1,0 +1,42 @@
+@use '../../styles/utils/variables' as vars;
+
+.task-create {
+  width: calc((700px / vars.$main-font-size) * 1rem);
+  padding: calc((50px / vars.$main-font-size) * 1rem);
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items:baseline;
+    justify-content: space-between;
+    margin-bottom: calc((20px / vars.$main-font-size) * 1rem);
+  }
+
+  &__label {
+    font-family: "Montserrat", serif;
+    font-size: calc((18px / vars.$main-font-size) * 1rem);
+    font-weight: 400;
+
+    cursor: pointer;
+  }
+
+  &__input {
+    width: calc((450px / vars.$main-font-size) * 1rem);
+    height: calc((20px / vars.$main-font-size) * 1rem);
+    padding: calc((10px / vars.$main-font-size) * 1rem);
+    border: 2px solid #C9C9C9;
+    border-radius: 5px;
+
+    &:focus {
+      border-color: #575757;;
+    }
+  }
+
+  &__button {
+    align-self: flex-end;
+  }
+}
