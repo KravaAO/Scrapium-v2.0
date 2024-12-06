@@ -1,0 +1,15 @@
+@use '../variables' as vars;
+
+.icon {
+  cursor: pointer;
+
+  &--small {
+    width: calc((15px / vars.$main-font-size) * 1rem);
+    height: calc((15px / vars.$main-font-size) * 1rem);
+  }
+
+  &--medium {
+    width: calc((25px / vars.$main-font-size) * 1rem);
+    height: calc((25px / vars.$main-font-size) * 1rem);
+  }
+}

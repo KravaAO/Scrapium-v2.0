@@ -1,0 +1,80 @@
+@use './utils/reset';
+@use './utils/variables' as vars;
+@use './utils/index' as utils;
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: vars.$main-font-family;
+  font-weight: vars.$main-font-weight;
+}
+
+
+.ag-theme-quartz .ag-root-wrapper {
+  border-radius: 0 !important;
+}
+
+.ag-theme-quartz {
+  --ag-font-size: 1rem !important;
+}
+
+.react-switch-bg {
+  height: calc((20px / vars.$main-font-size) * 1rem) !important;
+  width: calc((38px / vars.$main-font-size) * 1rem) !important;
+}
+
+.react-switch-handle {
+  height: calc((12px / vars.$main-font-size) * 1rem) !important;
+  width: calc((12px / vars.$main-font-size) * 1rem) !important;
+}
+
+.ag-header-cell.text-center {
+  .ag-header-cell-label {
+    justify-content: center;
+  }
+}
+
+.ready-status {
+  color: #FFA500;
+}
+
+.running-status {
+  color: #1E90FF;
+}
+
+.error-status {
+  color: #FF0000;
+}
+
+.completed-status {
+  color: #228B22;
+}
+
+.ag-cell-focus {
+  border: none !important;
+}
+
+
+.title--h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.title--h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.p-gray {
+  font-family: "Montserrat", sans-serif;
+  color: #727171;
+}
+
+.title--h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}

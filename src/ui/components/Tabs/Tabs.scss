@@ -1,0 +1,62 @@
+@use '../../styles/utils/variables' as vars;
+
+.tab {
+  font-family: "Open Sans", serif;
+  overflow-x: auto;
+  -webkit-app-region: no-drag;
+  
+  &__list {
+    display: flex;
+    padding-top: calc((10px / vars.$main-font-size) * 1rem);
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: calc((10px / vars.$main-font-size) * 1rem);
+    padding-left: calc((30px / vars.$main-font-size) * 1rem);
+    
+    transition: all 0.3s ease;
+
+    -webkit-app-region: no-drag;
+
+    cursor: pointer;
+
+    &:not(.tab__item--active)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      height: 10px;
+      width: 1px;
+      background-color: gray;
+    }
+    
+    &:has(+ .tab__item--active)::after {
+      display: none;
+    }
+  }
+
+  &__text {
+    padding-right: 30px;
+  }
+
+  &__item--active {
+    background-color: #ffffff;
+    border-radius: 5px 5px 0 0;
+    font-weight: 500;
+  }
+
+  &::-webkit-scrollbar {
+    height: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #a0a0a0;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+}
